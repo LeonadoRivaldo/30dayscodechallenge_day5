@@ -1,0 +1,24 @@
+{
+  "name": "30dayscodechallenge_day5",
+  "version": "1.0.0",
+  "description": "Instagram API with Node and Express, this is a tutorial by https://scotch.io/@devGson/using-the-instagram-api-with-node-and-expressjs",
+  "main": "api.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/LeonadoRivaldo/30dayscodechallenge_day5.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/LeonadoRivaldo/30dayscodechallenge_day5/issues"
+  },
+  "homepage": "https://github.com/LeonadoRivaldo/30dayscodechallenge_day5#readme",
+  "dependencies": {
+    "ejs": "^2.3.1",
+    "express": "^4.12.1",
+    "instagram-node": "^0.5.6"
+  }  
+}

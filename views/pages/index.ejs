@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <% include ../partials/head %>
+</head>
+<body>
+
+    <header>
+        <% include ../partials/header %>
+    </header>
+ 
+    <main  class="container" style="margin-top:20px;">
+        <div class="row">
+        <% instagram.forEach(function(insta) { %>
+            <div class="instagram-pic col col-sm-4">
+                <div class="card  border-secondary mb-3">
+                    <a href="<%= insta.link %>" target="_blank">
+                        <img class="card-img-top" src="<%= insta.images.low_resolution.url %>" width="<%= insta.images.low_resolution.width %>" height="<%= insta.images.low_resolution.height %>" alt="Card image cap">
+                    </a>                    
+                    <div class="card-body text-secondary">
+                        <p class="card-text d-flex justify-content-between">
+                            <span><i class="far fa-heart"></i> <%= insta.likes.count %></span> 
+                            <span class="viewComents"><i class="far fa-comment" style="margin-left:10px;"></i> <%= insta.comments.count %> </span>
+                        </p>
+                       <p class="card-text"><%= insta.caption.text %> </p>
+                    </div>
+                </div>
+            </div>
+        <% }); %>
+        </div>
+    </main>
+
+    <footer>
+        <% include ../partials/footer %>
+    </footer>
+
+</body>
+</html>
